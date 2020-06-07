@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Placement Assistant</title>
+	<link rel="icon" type="image/png" href="{% static 'companies/img/title.png' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'companies/style.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'companies/css/glypicon.css' %}">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+<div class="container-fluid">
+	<a class="navbar-brand" href="home.html"><img src="{% static 'companies/img/paypal.png' %}"></a>
+	<span class="navbar-text mr-auto" >
+      <h1>Placement Assistant</h1>Helping you to make the right move
+    </span>
+</div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #e3f2fd;">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarResponsive">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'companies' %}">Companies</a>
+			</li>
+			<!--<li class="nav-item">
+				<a class="nav-link" href="#chatsupport">Chat Support</a>
+			</li> -->
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'recruitmentprocess' %}">Recruitment process</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://groups.google.com/forum/embed/?place=forum/help-community">Help-Community</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="https://www.facebook.com/groups/1973739946058630/">Alumni-Support</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#contact">Contact Us</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+		<a style="margin:10px;"href="#"><i class="glyphicon glyphicon-user"></i>{{ user.get_username }} </a>
+			<a style="margin:10px;" href="{% url 'index' %}" ><i class="glyphicon glyphicon-log-in"></i> Logout</a>
+    </ul>
+	</div>
+</div>
+</nav>
+<div class="container-fluid padding" style="background-color:#f2f2f2;">
+	<div class="row text-center padding">
+		<div class="col-12" style="background-color:#f2f2f2;">
+			<h2 class="display-1" style="font-size:40px;">​Nokia</h2>
+		</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-12 offset-md-12 offset-sm-0">
+		<h3 class="display-2" style="font-size:30px;">About Nokia: -</h3>
+		<p style="font-family:serif;">
+		Nokia is a multinational company of communications and information technology, founded in 1865.It is headquartered in Espoo, Finland. The company is a creator of technologies that connect people. Nokia is the major distributor of mobile telephony industry and is the largest distributor of mobile phones.
+		</p>
+		<h3 class="display-2" style="font-size:30px;">Recruiting steps : -​</h3>
+		<p style="font-family:serif;">
+		In case of job recruitment, selection is the process to choose potential working persons for a company or organization. Nokia Recruitment process includes a selection stage when decisions are made as to the viability of a particular candidate's job application. It directly affects the overall productivity of an organization. A right selection may increase the overall performance of a company & a wrong one may lead to material and financial loss. A perfect selection process can help to pick the most eligible candidates amongst all applicants. The Process of selecting candidates focuses on abilities, knowledge, skills, experience and various other related factors.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">Stages of selection process to get recruited in Nokia:​</h3>
+		<p style="font-family:serif;">
+		<ul style="margin-left:100px;">
+			<li style="font-family:serif; font-size:18px;">Written Exam​</li>
+			<li style="font-family:serif; font-size:18px;">Nokia Interview Process</li>
+		</ul>
+		</p>
+		<h3 class="display-2" style="font-size:25px;">Written Exam​</h3>
+		<p style="font-family:serif;">
+		<ul style="margin-left:100px;">
+			 <li style="font-family:serif; font-size:18px;">Academic Criteria</li>
+			 <ul>
+			  <li style="font-family:serif; font-size:18px;">Minimum 65 percent in Class X, XII and Graduation.</li>
+			  <li style="font-family:serif; font-size:18px;">Only students from B.E/B.Tech (Computer Science, Information Science, Information Technology, Electronics & Communication, Electronics & Telecommunication, Electronics & Electrical, Electronics & Instrumentation, Telecommunication, and Instrumentation) are eligible.</li>
+			 </ul>
+			 <li style="font-family:serif; font-size:18px;">Test Pattern</li>
+			 <div class="table-responsive">
+			  <table class="table table-bordered" >
+				<thead>
+				  <tr class="active">
+					<th style="text-align:center;">Testing Areas</th>
+					<th style="text-align:center;">Number of Questions</th>
+				  </tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td align="center">Aptitude</td>
+						<td align="center">50</td>
+					</tr>
+					<tr>
+						<td align="center">Technical</td>
+						<td align="center">50</td>
+					</tr>
+					<tr>
+						<td align="center">Total</td>
+						<td align="center">100</td>
+					</tr>
+				</tbody>
+			  </table>
+			</div>
+			<li style="font-family:serif; font-size:18px;">Test Description</li>
+			<ul>
+			<li style="font-family:serif; font-size:18px;">The total time allotted in the written exam is 120 minutes. There is no negative marking in the paper.</li>
+			<li style="font-family:serif; font-size:18px;">Aptitude section consists of data interpretation and logical reasoning questions. The section involves easy solving puzzles, blood relations, statements & arguments, etc. This section also consists of questions from the topics like algebra, time & work, time, speed & distance, arithmetic, percentages, profit & loss, geometry, etc. This section is of moderate level.</li>
+			<li style="font-family:serif; font-size:18px;">Technical section involved questions from core subjects of Computer science and electronics. The subjects include C & C++ programming, Operating Systems, Computer Networks, etc. This section was tough and required thorough preparation. A person whose basics are clear could easily excel in this section.</li>
+			</ul>
+		</ul>
+		</p>
+		<h3 class="display-2" style="font-size:25px;"> Interview Process</h3>
+		<p style="font-family:serif;">
+		Nokia Interview process consists of Technical Interview and HR Interview. Following are the details of each phase:
+		<ul style="margin-left:100px;">
+		<li style="font-family:serif; font-size:20px;">Technical interview</li>
+		<p style="font-family:serif;">Questions related to specific technical fields are asked in this round. Questions may be based on specific knowledge about the company's technical activities; understanding of the technical work required to be completed as part of the job applied for or may enquire candidates to solve actual technical problems that they would be likely to face if employed.</p>
+		<li style="font-family:serif; font-size:20px;">HR Interview</li>
+		<p style="font-family:serif;">Final step to select a candidate as an employee is Interview as it helps to determine a candidate's personality. Questions can be of wide range starting from your introduction, Qualification, Experience, Industry specific experience, Courses done, your strengths and weaknesses, salary expectations, friends, family etc.</p>
+		</ul>
+		</p>
+		<h3 class="display-2" style="font-size:25px;">Question Asked in Nokia:</h3>
+		<ul style="margin-left:100px;">
+		<li style="font-family:serif; font-size:20px;">Explain internal architecture of Java.</li>
+		<li style="font-family:serif; font-size:20px;">What is JVM, JDK and JRE?</li>
+		<li style="font-family:serif; font-size:20px;">What is byte-code? Why java is platform independent?</li>
+		<li style="font-family:serif; font-size:20px;">What are all the types of memory in java?</li>
+		<li style="font-family:serif; font-size:20px;">Difference between Array and Array List.</li>
+		<li style="font-family:serif; font-size:20px;">Advantages of Array over linked list</li>
+		<li style="font-family:serif; font-size:20px;">Code for declare hash table in collections.</li>
+		<li style="font-family:serif; font-size:20px;"><a href="https://www.geeksforgeeks.org/tag/nokia/">More>></a></li>
+		</ul>
+		<h3 class="display-2" style="font-size:25px;">Nokia ALUMNI:</h3>
+		<ol style="margin-left:100px;">
+		<li style="font-family:serif; font-size:20px;">Poovarasan GB</li>
+		</ol>
+		<h3 class="display-2" style="font-size:20px;">To check more availability of information, the applicants can visit <a href="https://www.nokia.com/about-us/careers/">https://www.nokia.com/about-us/careers/</a> and gather information.</h3>
+		<a href=""><button type="button" class="btn" style="font-size:17px;font-weight:500;color:#ffffff;background-color:#000000;">Take Test</button></a>
+		
+		</div>
+	</div>
+</div>
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="login" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" style="font-family:serif;margin-left:195px;">Login</h4>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+						<form>
+							<div class="form-group required">
+								<label for="email">Email:</label>
+								<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+							</div>
+							<div class="form-group required">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+							</div>
+						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-success btn-lg mx-auto signup-btn" style="margin-top:0px;">Login</button>	
+						</div>
+						<p>Don't have an account?<a href="signup.html">Sign Up</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid text-center">
+<hr class="light">
+<a href="https://www.facebook.com/groups/1973739946058630/"><i class="fab fa-facebook" style='font-size:20px; margin:10px;color:#000066;'></i></a>
+<a href="#"><i class="fab fa-twitter" style='font-size:20px; margin:10px;color:#0099ff;'></i></a>
+<a href="#"><i class="fab fa-google-plus-g" style='font-size:20px; margin:10px;color:#ff4d4d;'></i></a>
+<a href="#"><i class="fab fa-instagram" style='font-size:20px; margin:10px;color:#ff1a1a;'></i></a>
+<h5>&copy;placementassistantteam@gmail.com</h5>
+</div>
+
+
+
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="chatsupport" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<iframe  allow="microphone;" width="550" height="550" src="https://console.dialogflow.com/api-client/demo/embedded/47eedbcf-2b66-4332-8483-1bea38f2b55c">
+						</iframe>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+</div>
+
+<a href="#chatsupport" class="float" data-toggle="modal">
+<i class="fa fa-comments my-float"></i>
+</a>
+</body>

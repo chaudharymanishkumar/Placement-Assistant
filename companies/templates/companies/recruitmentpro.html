@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Placement Assistant</title>
+	<link rel="icon" type="image/png" href="{% static 'companies/img/title.png' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'companies/style.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'companies/css/glypicon.css' %}">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+<div class="container-fluid">
+	<a class="navbar-brand" href="home.html"><img src="{% static 'companies/img/paypal.png' %}"></a>
+	<span class="navbar-text mr-auto" >
+      <h1>Placement Assistant</h1>Helping you to make the right move
+    </span>
+</div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #e3f2fd;">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarResponsive">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'companies' %}">Companies</a>
+			</li>
+			<!--<li class="nav-item">
+				<a class="nav-link" href="#chatsupport">Chat Support</a>
+			</li> -->
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'recruitmentprocess' %}">Recruitment process</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://groups.google.com/forum/embed/?place=forum/help-community">Help-Community</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="https://www.facebook.com/groups/1973739946058630/">Alumni-Support</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#contact">Contact Us</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+		<a style="margin:10px;"href="#"><i class="glyphicon glyphicon-user"></i>{{ user.get_username }} </a>
+			<a style="margin:10px;" href="{% url 'index' %}" ><i class="glyphicon glyphicon-log-in"></i> Logout</a>
+    </ul>
+	</div>
+</div>
+</nav>
+<div class="container-fluid padding" style="background-color:#f2f2f2;">
+	<div class="row text-center padding">
+		<div class="col-12" style="background-color:#f2f2f2;">
+			<h2 class="display-1" style="font-size:40px;">RECRUITMENT PROCESS​</h2>
+		</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-12 offset-md-12 offset-sm-0">
+		<h3 class="display-2" style="font-size:30px;">What is the recruitment process?​</h3>
+		<p style="font-family:serif;">Recruitment is a process of finding and attracting the potential resources for filling up the vacant positions in an organization.
+		 It sources the candidates with the abilities and attitude, which are required for achieving the objectives of an organization.<br>
+		Recruitment process is a process of identifying the jobs vacancy, analyzing the job requirements, reviewing applications, screening, shortlisting and selecting the right candidate.
+		</p>
+		<h3 class="display-2" style="font-size:30px;">Recruiting steps : -​</h3>
+		<h3 class="display-2" style="font-size:25px;">1.Identify hiring need​</h3>
+		<p style="font-family:serif;">
+		Before a position can be filled, it must be identified as available. Positions are either newly formed or recently vacated. In either case, the hiring staff should meet to generate a prioritized list of job requirements including special qualifications, characteristics, and experience wanted from a candidate.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">2.Plan​</h3>
+		<p style="font-family:serif;">
+		It’s important that all those involved in the hiring decision agree to the hiring process, steps, and communication channels to be used. The plan should include a timeline, recruitment plan, criteria for initial candidate screening, selection committee, interview questions, and instructions for taking notes.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">3.Create a job description​</h3>
+		<p style="font-family:serif;">
+		The agreed-upon job requirements form the basis for the job description. Other necessary information includes essential functions to be performed in the role and the advantages of working for the company (i.e., workplace environment, compensation and benefits, perks, etc.).
+		</p>
+		<h3 class="display-2" style="font-size:25px;">4.Post and promote job openings</h3>
+		<p style="font-family:serif;">
+		The job listing should be advertised internally so current employees can apply and make referrals. Other avenues for promotion are the company’s website, online job boards, social media, job fairs, and industry publications.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">5.Recruiting​</h3>
+		<p style="font-family:serif;">
+		Beyond passive recruitment via job posts, the hiring staff should seek out qualified candidates via LinkedIn, social media, and industry events. This will ensure that some applications from potential candidates who are not actively searching for new jobs but who may be perfect for the role are received.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">6. Applicant screening​</h3>
+		<p style="font-family:serif;">
+		As job applications arrive by email or via an applicant tracking system (ATS), the hiring staff reviews résumés/CVs and cover letters based on the criteria established in the planning step. Unqualified candidates’ applications are withdrawn from the applicant pool. Qualified candidates are informed of next steps beginning with a screening interview.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">7.Screening interview</h3>
+		<p style="font-family:serif;">
+		Initial interviews with applicants are typically phone calls with HR representatives. These interviews determine if applicants have the qualifications needed to do the job and serve to further narrow the pool of candidates. HR may also explain the interviewing process during this step.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">8.Interviews</h3>
+		<p style="font-family:serif;">
+		Depending on the size of the selection committee, several interviews are scheduled for each candidate.<br>
+		->Early interviews are typically in-person, one-on-one interviews with applicants and the hiring manager and focus on applicants’ experience, skills, work history, and availability.<br>
+		->Additional meetings with management, staff, executives, and other members of the organization can be one-on-one or panel interviews, formal or relaxed, on-site, off-site, or online (Skype, Google Hangouts). These interviews are more in-depth; in some organizations, each interviewer focuses on a specific subject or aspect of the job being filled to avoid overlap between interviews and to discover more about the applicants.<br>
+		->Final interviews might be conducted by the company’s senior leadership or an interviewer from a previous round of interviews. These latter-stage interviews are generally extended to a very small pool of top candidates.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">9.Applicant talent assessment</h3>
+		<p style="font-family:serif;">
+		Before, during, or after interviews, hiring staff often assign applicants one or more standardized tests to assess personality type, talent (also called pre-employment tests), physical suitability for the job, cognition (reasoning, memory, perceptual speed and accuracy, math, and reading comprehension), and/or emotional intelligence. Some organizations also require applicants to take tests or complete assignments to demonstrate professional skills applicable to the open position.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">10.Background check</h3>
+		<p style="font-family:serif;">
+		One of the final steps prior to making a job offer is conducting background checks to review candidates’ criminal record, to verify employment history and eligibility, and to run credit checks. Some organizations also check social media accounts (Facebook, Twitter, etc.) to make sure potential employees are likely to represent the company in a professional manner. Drug testing may also be warranted, depending on the nature of the job.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">11.Decision</h3>
+		<p style="font-family:serif;">
+		The hiring staff confers and evaluates applicants based on the interviews, job experience, skills and talent assessments, and all other relevant information (recommendations, e.g.). A top choice should be identified and agreed on. A backup candidate selection should be made, as well. If no candidates meet the hiring criteria, the hiring process should start over.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">12.Reference checks</h3>
+		<p style="font-family:serif;">
+		Once a candidate has been selected for the position, his or her professional references should be contacted. Reference checks can verify candidates’ employment details including job performance, strengths, and weaknesses. A typical question to ask references is “Would you rehire this person?”
+		</p>
+		<h3 class="display-2" style="font-size:25px;">13.Job offer</h3>
+		<p style="font-family:serif;">
+		Offering the job includes providing an offer letter stating the position’s salary, start date, and other terms and conditions of employment that are based on the agreement between the company and the candidate. It should be clear that the candidate understands the terms of the offer. The candidate may agree and sign, initiate negotiations (typically focusing on salary), or turn down the offer.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">14.Hiring</h3>
+		<p style="font-family:serif;">
+		Once the candidate accepts the job offer, he or she is hired. This kicks off a phase of filling out and filing paperwork related to employment including eligibility to work forms, tax withholding forms, and company specific forms.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">15.Onboarding</h3>
+		<p style="font-family:serif;">
+		A comprehensive onboarding process is a crucial step in the hiring process. This should involve making the new employee feel welcome even before he or she officially joins the organization. Preparing his or her workspace, providing necessary access credentials for work applications and networks, and outlining an orientation and training schedule can significantly speed up the new.
+		</p>
+		</div>
+	</div>
+</div>
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="login" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" style="font-family:serif;margin-left:195px;">Login</h4>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+						<form>
+							<div class="form-group required">
+								<label for="email">Email:</label>
+								<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+							</div>
+							<div class="form-group required">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+							</div>
+						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-success btn-lg mx-auto signup-btn" style="margin-top:0px;">Login</button>	
+						</div>
+						<p>Don't have an account?<a href="{% url 'signup' %}">Sign Up</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid text-center">
+<hr class="light">
+<a href="#"><i class="fab fa-facebook" style='font-size:20px; margin:10px;color:#000066;'></i></a>
+<a href="#"><i class="fab fa-twitter" style='font-size:20px; margin:10px;color:#0099ff;'></i></a>
+<a href="#"><i class="fab fa-google-plus-g" style='font-size:20px; margin:10px;color:#ff4d4d;'></i></a>
+<a href="#"><i class="fab fa-instagram" style='font-size:20px; margin:10px;color:#ff1a1a;'></i></a>
+<h5>&copy;placementassistantteam@gmail.com</h5>
+
+	<a href="#chatsupport" class="float" data-toggle="modal">
+<i class="fa fa-comments my-float"></i>
+</a>
+</div>
+
+
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="chatsupport" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<iframe  allow="microphone;" width="550" height="550" src="https://console.dialogflow.com/api-client/demo/embedded/47eedbcf-2b66-4332-8483-1bea38f2b55c">
+						</iframe>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+</div>
+
+</body>

@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Placement Assistant</title>
+	<link rel="icon" type="image/png" href="{% static 'companies/img/title.png' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'companies/style.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'companies/css/glypicon.css' %}">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+<div class="container-fluid">
+	<a class="navbar-brand" href="home.html"><img src="{% static 'companies/img/paypal.png' %}"></a>
+	<span class="navbar-text mr-auto" >
+      <h1>Placement Assistant</h1>Helping you to make the right move
+    </span>
+</div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #e3f2fd;">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarResponsive">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'companies' %}">Companies</a>
+			</li>
+			<!--<li class="nav-item">
+				<a class="nav-link" href="#chatsupport">Chat Support</a>
+			</li> -->
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'recruitmentprocess' %}">Recruitment process</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://groups.google.com/forum/embed/?place=forum/help-community">Help-Community</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="http://127.0.0.1/chatapp/">Alumni-Support</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="https://www.facebook.com/groups/1973739946058630/">Social-Support</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#contact">Contact Us</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+		<a style="margin:10px;"href="#"><i class="glyphicon glyphicon-user"></i>{{ user.get_username }} </a>
+			<a style="margin:10px;" href="{% url 'index' %}" ><i class="glyphicon glyphicon-log-in"></i> Logout</a>
+    </ul>
+	</div>
+</div>
+</nav>
+<div class="container-fluid padding" style="background-color:#f2f2f2;">
+	<div class="row text-center padding">
+		<div class="col-12" style="background-color:#f2f2f2;">
+			<h2 class="display-1" style="font-size:40px;">​Flipkart</h2>
+		</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-12 offset-md-12 offset-sm-0">
+		<h3 class="display-2" style="font-size:30px;">About Flipkart: -</h3>
+		<p style="font-family:serif;">
+		Flipkart Pvt Ltd. is an Indian electronic commerce company based in Bengaluru, India. Founded by Sachin Bansal and Binny Bansal (no blood relation) in 2007, the company initially focused on book sales, before expanding into other product categories such as consumer electronics, fashion, and lifestyle products.
+<br>The service competes primarily with Amazon’s Indian subsidiary and the domestic rival Snapdeal. As of 2017, Flipkart held a 39.5% market share of India’s e-commerce industry. Flipkart is significantly dominant in the sale of apparel (a position that was bolstered by its acquisitions of Myntra and Jabong.com), and was described as being “neck and neck” with Amazon in the sale of electronics and mobile phones. Flipkart also owns PhonePe, a mobile payments service based on the Unified Payments Interface (UPI).
+		</p>
+		<h3 class="display-2" style="font-size:30px;">Selection Process : -​</h3>
+		<p style="font-family:serif;">
+		In case of job recruitment, selection is the process to choose potential working persons for a company or organization. Flipkart Recruitment process includes a selection stage when decisions are made as to the viability of a particular candidate's job application. It directly affects the overall productivity of an organization. A right selection may increase the overall performance of a company & a wrong one may lead to material and financial loss. A perfect selection process can help to pick the most eligible candidates amongst all applicants. The Process of selecting candidates focuses on abilities, knowledge, skills, experience and various other related factors.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">Stages of selection process to get recruited in Flipkart:​</h3>
+		<p style="font-family:serif;">
+		<ul style="margin-left:100px;">
+			<li style="font-family:serif; font-size:18px;">Online Coding Round/Telephonic Round</li>
+			<li style="font-family:serif; font-size:18px;">Multiple Technical Round</li>
+			<li style="font-family:serif; font-size:18px;">Hiring Manager Round</li>
+			<li style="font-family:serif; font-size:18px;">HR Round</li>
+		</ul>
+		</p>
+		<h3 class="display-2" style="font-size:25px;">​Online Coding Round/Telephonic Round</h3>
+		<p style="font-family:serif;">
+		The online round is hosted on Hackerrank and the candidates are presented with around 3 coding questions, of which 2 are easy and 1 is hard. The number of questions may vary the difficulty distribution is same. The whole round is around 60 minutes long. Problems are generally based on recursion, strings, trees and graphs.
+		</p>
+		<h3 class="display-2" style="font-size:25px;"> Interview Process</h3>
+		<p style="font-family:serif;">
+		Flipkart Interview process consists of Multiple Technical Interview and HR Interview. Following are the details of each phase:
+		<ul style="margin-left:100px;">
+		<li style="font-family:serif; font-size:20px;">Technical Round 1:</li>
+		<p style="font-family:serif;">Personal interview round which largely consists of algorithmic problems on DS like graphs, dp, matrices and strings. Many times puzzles are also asked, though standard puzzles, some variation maybe there. A strong understanding of data structures is needed to pass this round.</p>
+		<li style="font-family:serif; font-size:20px;">Technical Round 2:</li>
+		<p style="font-family:serif;">This round generally is a machine coding round, in which a particular problem is given whose solution is to be built from scratch in any language of choice, ex: job scheduling problem, implementing a complete text line editor with specified features. The round is of ~90 mins and a complete working code with error handling is expected at the end.</p>
+		<li style="font-family:serif; font-size:20px;">Hiring Manager Round:</li>
+		<p style="font-family:serif;">This round mainly consists of hard algorithmic and DS related problems, mostly from trees, graphs and linked lists, along with the discussion of your projects, the technologies used in them, the problems faced etc. Some conceptual problems related to OS are also asked.</p>
+		<li style="font-family:serif; font-size:20px;">HR Interview</li>
+		<p style="font-family:serif;">Final step to select a candidate as an employee is Interview as it helps to determine a candidate's personality. Questions can be of wide range starting from your introduction, Qualification, Experience, Industry specific experience, Courses done, your strengths and weaknesses, salary expectations, friends, family etc.</p>
+		</ul>
+		</p>
+		<h3 class="display-2" style="font-size:25px;">Question Asked in Flipkart:</h3>
+		<ul style="margin-left:100px;">
+		<li style="font-family:serif; font-size:20px;">Cutting binary string</li>
+		<li style="font-family:serif; font-size:20px;">K-th element of two sorted arrays</li>
+		<li style="font-family:serif; font-size:20px;">First non repeating character in a stream</li>
+		<li style="font-family:serif; font-size:20px;">0-1 knapsack problem</li>
+		<li style="font-family:serif; font-size:20px;">Inversion of array</li>
+		<li style="font-family:serif; font-size:20px;">Sum of dependencies in a graph</li>
+		<li style="font-family:serif; font-size:20px;">Shortest direction</li>
+		<li style="font-family:serif; font-size:20px;">Rat in a maze</li>
+		<li style="font-family:serif; font-size:20px;"><a href="https://www.geeksforgeeks.org/tag/flipkart/">More>></a></li>
+		</ul>
+		<h3 class="display-2" style="font-size:20px;">To check more availability of information, the applicants can visit <a href="http://flipkartcareers.com/">http://flipkartcareers.com/</a> and gather information.</h3>
+		<a href="https://www.prep.youth4work.com/Placement-Papers/Flipkart-Test"><button type="button" class="btn" style="font-size:17px;font-weight:500;color:#ffffff;background-color:#000000;">Take Test</button></a>
+
+		</div>
+	</div>
+</div>
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="login" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" style="font-family:serif;margin-left:195px;">Login</h4>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+						<form>
+							<div class="form-group required">
+								<label for="email">Email:</label>
+								<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+							</div>
+							<div class="form-group required">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+							</div>
+						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-success btn-lg mx-auto signup-btn" style="margin-top:0px;">Login</button>
+						</div>
+						<p>Don't have an account?<a href="signup.html">Sign Up</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid text-center">
+<hr class="light">
+<a href="https://www.facebook.com/groups/1973739946058630/"><i class="fab fa-facebook" style='font-size:20px; margin:10px;color:#000066;'></i></a>
+<a href="#"><i class="fab fa-twitter" style='font-size:20px; margin:10px;color:#0099ff;'></i></a>
+<a href="#"><i class="fab fa-google-plus-g" style='font-size:20px; margin:10px;color:#ff4d4d;'></i></a>
+<a href="#"><i class="fab fa-instagram" style='font-size:20px; margin:10px;color:#ff1a1a;'></i></a>
+<h5>&copy;placementassistantteam@gmail.com</h5>
+</div>
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="chatsupport" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<iframe  allow="microphone;" width="550" height="550" src="https://console.dialogflow.com/api-client/demo/embedded/47eedbcf-2b66-4332-8483-1bea38f2b55c">
+						</iframe>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+</div>
+
+<a href="#chatsupport" class="float" data-toggle="modal">
+<i class="fa fa-comments my-float"></i>
+</a>
+</body>

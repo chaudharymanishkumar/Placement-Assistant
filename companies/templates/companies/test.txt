@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Placement Assistant</title>
+	<link rel="icon" type="image/png" href="{% static 'companies/img/title.png' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'companies/style.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'companies/css/glypicon.css' %}"
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+<div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="{% static 'companies/img/paypal.png' %}"></a>
+	<span class="navbar-text mr-auto" >
+      <h1>Placement Assistant</h1>Helping you to make the right move
+    </span>
+</div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #e3f2fd;">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarResponsive">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'companies' %}">Companies</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'softwarecompanies'%}">Software Companies</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'recruitmentprocess' %}">Recruitment process</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'home' %}">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'home' %}">Contact Us</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+        <a style="margin:10px;" href="{% url 'signup' %}"><i class="glyphicon glyphicon-user"></i> Sign Up</a>
+		<a style="margin:10px;" href="#login" data-toggle="modal"><i class="glyphicon glyphicon-log-in"></i> Login</a>
+    </ul>
+	</div>
+</div>
+</nav>
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="login" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" style="font-family:serif;margin-left:195px;">Login</h4>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+						<form method="POST">
+							{% csrf_token %}
+							<div class="form-group required">
+								<label for="username">Username:</label>
+								<input type="text" class="form-control" id="username" name="username" required="true" placeholder="abc">
+							</div>
+							<div class="form-group required">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control" id="pwd" name="password" required="true" placeholder="*******">
+							</div>
+							<p>{{error }}</p>
+							<div class="modal-footer">
+								<button  type="submit" class="btn  mx-auto" style="margin-top:0px;">Login</button>
+							</div>
+						</form>
+						</div>
+
+						<p>Don't have an account?<a href="#">Sign Up</a></p>
+					</div>
+				</div>
+			</div>
+		<div>
+	</div>
+</div>
+</body>
+
+
+
+
+client Id
+439281664367-069hlsk0t97blcaactc3app164b1gu0s.apps.googleusercontent.com
+
+client secret
+WO62QSqBuaBUyRdX2y7r5Fxu
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '439281664367-069hlsk0t97blcaactc3app164b1gu0s.apps.googleusercontent.com'    #app key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'WO62QSqBuaBUyRdX2y7r5Fxu'                                                  #app secret key
+SOCIAL_AUTH_FACEBOOK_KEY = '1070857146434643'                       #app id
+SOCIAL_AUTH_FACEBOOK_SECRET = '6be232e07676506e8ed965f6bbc118c2'     #app secret key
+
+
+
+for google authentication
+https://fosstack.com/how-to-add-google-authentication-in-django/
+for facebook  and linkedin authentication
+https://scotch.io/tutorials/django-authentication-with-facebook-instagram-and-linkedin

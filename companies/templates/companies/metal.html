@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Placement Assistant</title>
+	<link rel="icon" type="image/png" href="{% static 'companies/img/title.png' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'companies/style.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'companies/css/glypicon.css' %}">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+<div class="container-fluid">
+	<a class="navbar-brand" href="home.html"><img src="{% static 'companies/img/paypal.png' %}"></a>
+	<span class="navbar-text mr-auto" >
+      <h1>Placement Assistant</h1>Helping you to make the right move
+    </span>
+</div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #e3f2fd;">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarResponsive">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'companies' %}">Companies</a>
+			</li>
+			<!--<li class="nav-item">
+				<a class="nav-link" href="#chatsupport">Chat Support</a>
+			</li> -->
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'recruitmentprocess' %}">Recruitment process</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://groups.google.com/forum/embed/?place=forum/help-community">Help-Community</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="https://www.facebook.com/groups/1973739946058630/">Alumni-Support</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#contact">Contact Us</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+		<a style="margin:10px;"href="#"><i class="glyphicon glyphicon-user"></i>{{ user.get_username }} </a>
+			<a style="margin:10px;" href="{% url 'index' %}" ><i class="glyphicon glyphicon-log-in"></i> Logout</a>
+    </ul>
+	</div>
+</div>
+</nav>
+<div class="container-fluid padding" style="background-color:#f2f2f2;">
+	<div class="row text-center padding">
+		<div class="col-12" style="background-color:#f2f2f2;">
+			<h2 class="display-1">Metal And Mining Companies</h2>
+			<p><em>Select company for placement training</em></p>
+		</div>
+</div>
+</div>
+<div class="container-fluid padding">
+<div class="row text-center padding" style="padding:100px;">
+	<div class="col-12 col-md-4 col-xl-3">
+		<img src="{% static 'companies/img/metal_mining/Coal_India_Logo.png' %}" class="img-fluid">
+		<a href="{% url 'coalindia' %}"><button type="button" class="btn" style="margin-left:5px;">Coal India</button></a>
+	</div>
+	<div class="col-12 col-md-4 col-xl-3">
+		<img src="{% static 'companies/img/metal_mining/hindalco.jpg' %}" class="img-fluid">
+		<a href="#"><button type="button" class="btn" style="margin-left:5px;">Hindalco</button></a>
+	</div>
+	<div class="col-12 col-md-4 col-xl-3">
+		<img src="{% static 'companies/img/metal_mining/Tata-Steel.jpg' %}" class="img-fluid">
+		<a href="{% url 'tatasteel' %}"><button type="button" class="btn" style="margin-left:5px;">Tata Steel</button></a>
+	</div>
+	<div class="col-12 col-md-4 col-xl-3">
+		<img src="{% static 'companies/img/metal_mining/vedanta.png' %}" class="img-fluid">
+		<a href="{% url 'vedanta' %}"><button type="button" class="btn" style="margin-left:5px;">vedanta</button></a>
+	</div>
+</div>
+</div>
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="login" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" style="font-family:serif;margin-left:195px;">Login</h4>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+						<form>
+							<div class="form-group required">
+								<label for="email">Email:</label>
+								<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+							</div>
+							<div class="form-group required">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+							</div>
+						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-success btn-lg mx-auto signup-btn" style="margin-top:0px;">Login</button>	
+						</div>
+						<p>Don't have an account?<a href="signup.html">Sign Up</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid text-center">
+<hr class="light">
+<a href="https://www.facebook.com/groups/1973739946058630/"><i class="fab fa-facebook" style='font-size:20px; margin:10px;color:#000066;'></i></a>
+<a href="#"><i class="fab fa-twitter" style='font-size:20px; margin:10px;color:#0099ff;'></i></a>
+<a href="#"><i class="fab fa-google-plus-g" style='font-size:20px; margin:10px;color:#ff4d4d;'></i></a>
+<a href="#"><i class="fab fa-instagram" style='font-size:20px; margin:10px;color:#ff1a1a;'></i></a>
+<h5>&copy;placementassistantteam@gmail.com</h5>
+	<a href="#chatsupport" class="float" data-toggle="modal">
+<i class="fa fa-comments my-float"></i>
+</a>
+</div>
+
+
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="chatsupport" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<iframe  allow="microphone;" width="550" height="550" src="https://console.dialogflow.com/api-client/demo/embedded/47eedbcf-2b66-4332-8483-1bea38f2b55c">
+						</iframe>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+</div>
+
+</body>

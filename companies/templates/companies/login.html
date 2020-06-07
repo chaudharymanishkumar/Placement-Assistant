@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Placement Assistant</title>
+	<link rel="icon" type="image/png" href="{% static 'companies/img/title.png' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'companies/style.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'companies/css/glypicon.css' %}"
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+<div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="{% static 'companies/img/paypal.png' %}"></a>
+	<span class="navbar-text mr-auto" >
+      <h1>Placement Assistant</h1>Helping you to make the right move
+    </span>
+</div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #e3f2fd;">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarResponsive">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'companies' %}">Companies</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'recruitmentprocess' %}">Recruitment process</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#chatsupport">Chat Support</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'home' %}">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'home' %}">Contact Us</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+        <a style="margin:10px;" href="{% url 'signup' %}"><i class="glyphicon glyphicon-user"></i> Sign Up</a>
+		<a style="margin:10px;" href="#login" data-toggle="modal"><i class="glyphicon glyphicon-log-in"></i> Login</a>
+    </ul>
+	</div>
+</div>
+</nav>
+<div class="signup-form">
+    <form name="form" method="POST" action="">
+    	{% csrf_token %}
+		<h2>Login</h2>
+		<p class="hint-text">Login with your social media account or User Name</p>
+		<div class="social-btn text-center">
+			<a href="{% url 'social:begin' 'facebook' %}" class="btn btn-primary btn-lg"><i class="fab fa-facebook"></i> Facebook</a>
+			<a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-danger btn-lg"><i class="fab fa-google"></i> Google</a>
+			<a href="{% url 'social:begin' 'linkedin-oauth2' %}" class="btn btn-lg" style="background-color:#0077b3;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+		</div>
+		<div class="or-seperator"><b>or</b></div>
+		{{ form.as_p}}
+        <div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Login</button>
+        </div>
+    </form>
+	<dev>
+		<center><p>Don't have an account? <a href="{% url 'signup' %}">Signup here</a></p></center>
+	</dev>
+</div>
+</body>

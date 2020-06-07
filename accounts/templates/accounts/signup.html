@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Placement Assistant</title>
+	<link rel="icon" type="image/png" href="img/title.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/glypicon.css"
+</head>
+<body style="background-color:#f5f5f5;">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+<div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="img/paypal.png"></a>
+	<span class="navbar-text mr-auto" >
+      <h1>Placement Assistant</h1>Helping you make the right move
+    </span>
+</div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #e3f2fd;">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarResponsive">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="home.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="companies.html">Companies</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="softwareco.html">Software Companies</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="recruitmentpro.html">Recruitment process</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="home.html">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="home.html">Contact Us</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+        <a style="margin:10px;" href="signup.html"><i class="glyphicon glyphicon-user"></i> Sign Up</a>
+		<a style="margin:10px;" href="#login" data-toggle="modal"><i class="glyphicon glyphicon-log-in"></i> Login</a>
+    </ul>
+	</div>
+</div>
+</nav>
+</head>
+<body>
+<div class="signup-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+		<h2>Create an Account</h2>
+		<p class="hint-text">Sign up with your social media account or email address</p>
+		<div class="social-btn text-center">
+			<a href="#" class="btn btn-primary btn-lg"><i class="fab fa-facebook"></i> Facebook</a>
+			<a href="#" class="btn btn-danger btn-lg"><i class="fab fa-google"></i> Google</a>
+			<a href="#" class="btn btn-lg" style="background-color:#0077b3;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+		</div>
+		<div class="or-seperator"><b>or</b></div>
+		<div class="form-group">
+        	<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control input-lg" name="confirm_password" placeholder="Confirm Password" required="required">
+        </div>  
+        <div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Sign Up</button>
+        </div>
+    </form>
+    <div class="text-center">Already have an account? <a href="#login" data-toggle="modal">Login here</a></div>
+</div>
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="login" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" style="font-family:serif;margin-left:195px;">Login</h4>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+						<form>
+							<div class="form-group required">
+								<label for="email">Email:</label>
+								<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+							</div>
+							<div class="form-group required">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+							</div>
+						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-success btn-lg mx-auto login-btn" style="margin-top:0px;">Login</button>	
+						</div>
+						<p>Don't have an account?<a href="signup.html">Sign Up</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>

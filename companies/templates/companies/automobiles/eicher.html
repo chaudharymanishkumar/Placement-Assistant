@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Placement Assistant</title>
+	<link rel="icon" type="image/png" href="{% static 'companies/img/title.png' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'companies/style.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'companies/css/glypicon.css' %}">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+<div class="container-fluid">
+	<a class="navbar-brand" href="home.html"><img src="{% static 'companies/img/paypal.png' %}"></a>
+	<span class="navbar-text mr-auto" >
+      <h1>Placement Assistant</h1>Helping you to make the right move
+    </span>
+</div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #e3f2fd;">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarResponsive">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'companies' %}">Companies</a>
+			</li>
+			<!--<li class="nav-item">
+				<a class="nav-link" href="#chatsupport">Chat Support</a>
+			</li> -->
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'recruitmentprocess' %}">Recruitment process</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://groups.google.com/forum/embed/?place=forum/help-community">Help-Community</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="http://127.0.0.1/chatapp/">Alumni-Support</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="https://www.facebook.com/groups/1973739946058630/">Social-Support</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#contact">Contact Us</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+		<a style="margin:10px;"href="#"><i class="glyphicon glyphicon-user"></i>{{ user.get_username }} </a>
+			<a style="margin:10px;" href="{% url 'index' %}" ><i class="glyphicon glyphicon-log-in"></i> Logout</a>
+    </ul>
+	</div>
+</div>
+</nav>
+<div class="container-fluid padding" style="background-color:#f2f2f2;">
+	<div class="row text-center padding">
+		<div class="col-12" style="background-color:#f2f2f2;">
+			<h2 class="display-1" style="font-size:40px;">​Eicher</h2>
+		</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-12 offset-md-12 offset-sm-0">
+		<h3 class="display-2" style="font-size:30px;">About Eicher: -</h3>
+		<p style="font-family:serif;">
+		Bharat Petroleum Corporation Limited, India’s ‘best performing’ Public Sector Undertaking, provides job opportunities to bright and professionally qualified people. Eicher is a Fortune 500 oil refining, exploration and marketing PSU that has been granted the Navratna status. It currently operates two of India’s largest refineries and has been phenomenal in terms of turnover, profitability, financial reserves and people capital, post-nationalization in 1976.
+		<br>As Bharat Petroleum develops new and innovative ways to meet the country’s growing demand for fuel, it is also looking for recruiting people who are curious, passionate and excited to explore ideas and technology and who will help shape the future. By getting recruited at BPCL, one can be a part of phenomenal growth and change, where you can amalgamate your values and aspirations with that of BPCL, by working towards fuelling a billion lives.
+		</p>
+		<h3 class="display-2" style="font-size:30px;">Selection Process : -​</h3>
+		<p style="font-family:serif;">
+		In case of job recruitment, selection is the process to choose potential working persons for a company or organization. Eicher Recruitment process includes a selection stage when decisions are made as to the viability of a particular candidate's job application. It directly affects the overall productivity of an organization. A right selection may increase the overall performance of a company & a wrong one may lead to material and financial loss. A perfect selection process can help to pick the most eligible candidates amongst all applicants. The Process of selecting candidates focuses on abilities, knowledge, skills, experience and various other related factors.
+		</p>
+		<h3 class="display-2" style="font-size:25px;">Stages of selection process to get recruited in Eicher:​</h3>
+		<p style="font-family:serif;">
+		<ul style="margin-left:100px;">
+			<li style="font-family:serif; font-size:18px;">Written Test</li>
+			<li style="font-family:serif; font-size:18px;">Skill Test</li>
+			<li style="font-family:serif; font-size:18px;">GATE Exam​</li>
+			<li style="font-family:serif; font-size:18px;">Group Discussion</li>
+			<li style="font-family:serif; font-size:18px;">Eicher Interview Process</li>
+		</ul>
+		</p>
+		<h3 class="display-2" style="font-size:25px;">Written Exam​</h3>
+		<p style="font-family:serif;">
+		<ul style="margin-left:100px;">
+			 <li style="font-family:serif; font-size:18px;">Academic Criteria</li>
+			 <ul>
+			  <li style="font-family:serif; font-size:18px;">B.E / B.Tech.</li>
+			  <li style="font-family:serif; font-size:18px;">Candidates should have passed their B.E. /B. Tech. in (CS/IT/ EE /EC) or MCA with 60% & above marks for PA post.</li>
+			  <li style="font-family:serif; font-size:18px;">Candidates should not have more than 1 years gap in education.</li>
+			 </ul>
+		</ul>
+		</p>
+		<h3 class="display-2" style="font-size:25px;">Group Discussion</h3>
+		<p style="font-family:serif;">
+			<ul style="margin-left:100px;">
+			<li style="font-family:serif; font-size:18px;">They will form a group of 12 to 14 people.</li>
+			<li style="font-family:serif; font-size:18px;">They will give u a case study.</li>
+			<li style="font-family:serif; font-size:18px;">Time alloted to read a case study is 5 mins.</li>
+			<li style="font-family:serif; font-size:18px;">Then GD will be open for 10 to 12 mins.</li>
+			</ul>
+		</p>
+		<h3 class="display-2" style="font-size:25px;"> Interview Process</h3>
+		<p style="font-family:serif;">
+		Eicher Interview process consists of Technical Interview and HR Interview. Following are the details of each phase:
+		<ul style="margin-left:100px;">
+		<li style="font-family:serif; font-size:20px;">Technical interview</li>
+		<p style="font-family:serif;">Questions related to specific technical fields are asked in this round. Questions may be based on specific knowledge about the company's technical activities; understanding of the technical work required to be completed as part of the job applied for or may enquire candidates to solve actual technical problems that they would be likely to face if employed.</p>
+		<li style="font-family:serif; font-size:20px;">HR Interview</li>
+		<p style="font-family:serif;">Final step to select a candidate as an employee is Interview as it helps to determine a candidate's personality. Questions can be of wide range starting from your introduction, Qualification, Experience, Industry specific experience, Courses done, your strengths and weaknesses, salary expectations, friends, family etc.</p>
+		</ul>
+		</p>
+		<h3 class="display-2" style="font-size:25px;">Question Asked in Eicher:</h3>
+		<ul style="margin-left:100px;">
+		<li style="font-family:serif; font-size:20px;">How can one automate a fuel dispensing unit?</li>
+		<li style="font-family:serif; font-size:20px;">What is the difference between diesel and petrol?</li>
+		<li style="font-family:serif; font-size:20px;">What is Bernoulli’s Equation?</li>
+		<li style="font-family:serif; font-size:20px;">What are gas turbines and generator protections?</li>
+		<li style="font-family:serif; font-size:20px;">Why is temperature increased before filtration skid?</li>
+		<li style="font-family:serif; font-size:20px;">Explain IGV and its functions?</li>
+		<li style="font-family:serif; font-size:20px;">Explain STG de-sync procedure with 2 HRSG’s?</li>
+		<li style="font-family:serif; font-size:20px;"><a href="http://www.allindiaexams.in/placement-papers/bpcl/395">More>></a></li>
+		</ul>
+		<h3 class="display-2" style="font-size:25px;">Eicher ALUMNI:</h3>
+		<ol style="margin-left:100px;">
+		<li style="font-family:serif; font-size:20px;">Kamala Senguttuvan</li>
+		</ol>
+		<h3 class="display-2" style="font-size:20px;">To check more availability of information, the applicants can visit <a href="https://www.bharatpetroleum.com/Careers/Careers.aspx">https://www.bharatpetroleum.com/Careers/Careers.aspx</a> and gather information.</h3>
+		<a href=""><button type="button" class="btn" style="font-size:17px;font-weight:500;color:#ffffff;background-color:#000000;">Take Test</button></a>
+
+		</div>
+	</div>
+</div>
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="login" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" style="font-family:serif;margin-left:195px;">Login</h4>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+						<form>
+							<div class="form-group required">
+								<label for="email">Email:</label>
+								<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+							</div>
+							<div class="form-group required">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+							</div>
+						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-success btn-lg mx-auto signup-btn" style="margin-top:0px;">Login</button>
+						</div>
+						<p>Don't have an account?<a href="signup.html">Sign Up</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid text-center">
+<hr class="light">
+<a href="https://www.facebook.com/groups/1973739946058630/"><i class="fab fa-facebook" style='font-size:20px; margin:10px;color:#000066;'></i></a>
+<a href="#"><i class="fab fa-twitter" style='font-size:20px; margin:10px;color:#0099ff;'></i></a>
+<a href="#"><i class="fab fa-google-plus-g" style='font-size:20px; margin:10px;color:#ff4d4d;'></i></a>
+<a href="#"><i class="fab fa-instagram" style='font-size:20px; margin:10px;color:#ff1a1a;'></i></a>
+<h5>&copy;placementassistantteam@gmail.com</h5>
+</div>
+<div class="container padding">
+	<div class="row">
+		<div class="col-12">
+			<div class="modal" id="chatsupport" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<iframe  allow="microphone;" width="550" height="550" src="https://console.dialogflow.com/api-client/demo/embedded/47eedbcf-2b66-4332-8483-1bea38f2b55c">
+						</iframe>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+</div>
+
+<a href="#chatsupport" class="float" data-toggle="modal">
+<i class="fa fa-comments my-float"></i>
+</a>
+</body>
